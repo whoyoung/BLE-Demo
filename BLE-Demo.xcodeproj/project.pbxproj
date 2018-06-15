@@ -13,6 +13,7 @@
 		7767B8EA20D392FA00415B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7767B8E920D392FA00415B7B /* Assets.xcassets */; };
 		7767B8ED20D392FA00415B7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7767B8EB20D392FA00415B7B /* LaunchScreen.storyboard */; };
 		7767B8F020D392FA00415B7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7767B8EF20D392FA00415B7B /* main.m */; };
+		7767B8F820D396F500415B7B /* BleCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7767B8F720D396F500415B7B /* BleCentralManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		7767B8EC20D392FA00415B7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7767B8EE20D392FA00415B7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7767B8EF20D392FA00415B7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7767B8F620D396F500415B7B /* BleCentralManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BleCentralManager.h; sourceTree = "<group>"; };
+		7767B8F720D396F500415B7B /* BleCentralManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BleCentralManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				7767B8E120D392F800415B7B /* AppDelegate.m */,
 				7767B8E320D392F800415B7B /* ViewController.h */,
 				7767B8E420D392F800415B7B /* ViewController.m */,
+				7767B8F620D396F500415B7B /* BleCentralManager.h */,
+				7767B8F720D396F500415B7B /* BleCentralManager.m */,
 				7767B8E620D392F800415B7B /* Main.storyboard */,
 				7767B8E920D392FA00415B7B /* Assets.xcassets */,
 				7767B8EB20D392FA00415B7B /* LaunchScreen.storyboard */,
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7767B8E520D392F800415B7B /* ViewController.m in Sources */,
+				7767B8F820D396F500415B7B /* BleCentralManager.m in Sources */,
 				7767B8F020D392FA00415B7B /* main.m in Sources */,
 				7767B8E220D392F800415B7B /* AppDelegate.m in Sources */,
 			);
