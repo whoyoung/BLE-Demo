@@ -7,7 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreBluetooth/CoreBluetooth.h>
+#import "PeripheralModel.h"
+
+typedef void (^ScanPeripheralsServicesBlock)(PeripheralModel *periModel);
+typedef void (^ConnectPeripheralBlock)(BOOL isSuccess, NSError *error);
+typedef void (^CancelPeripheralConnectionBlock)(BOOL isSuccess, NSError *error);
 
 @interface BleCentralManager : NSObject
+
 + (instancetype)sharedManager;
+
+- (void)scanForPeripheralsWithServicesBlock:(ScanPeripheralsServicesBlock)block;
+- (void)connectPeripheral:(CBPeripheral *)peripheral block:(ConnectPeripheralBlock)block;
+- (void)cancelPeripheralConnection:(CBPeripheral *)peripheral block:(CancelPeripheralConnectionBlock)block;
+
 @end
