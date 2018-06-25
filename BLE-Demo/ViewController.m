@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "BleCentralManager.h"
 #import "PeripheralModel.h"
+#import "PeripheralDetailTableViewController.h"
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *periModels;
@@ -55,13 +57,17 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     PeripheralModel *model = self.periModels[indexPath.row];
-    [[BleCentralManager sharedManager] connectPeripheral:model.peripheral block:^(BOOL isSuccess, NSError *error) {
-        if (isSuccess) {
-            NSLog(@"connect success");
-        } else {
-            NSLog(@"connect error = %@",error);
-        }
-    }];
+    
+    PeripheralDetailTableViewController *peripheralDetailVC = [[PeripheralDetailTableViewController alloc] initWithPeripheralModel:model];
+    [self.navigationController pushViewController:peripheralDetailVC animated:YES];
+    
+//    [[BleCentralManager sharedManager] connectPeripheral:model.peripheral block:^(BOOL isSuccess, NSError *error) {
+//        if (isSuccess) {
+//            NSLog(@"connect success");
+//        } else {
+//            NSLog(@"connect error = %@",error);
+//        }
+//    }];
     
 }
 

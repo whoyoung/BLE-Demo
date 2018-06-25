@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		773BB7B120D3D11300DA8D8C /* PeripheralDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 773BB7B020D3D11300DA8D8C /* PeripheralDetailTableViewController.m */; };
 		7767B8E220D392F800415B7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7767B8E120D392F800415B7B /* AppDelegate.m */; };
 		7767B8E520D392F800415B7B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7767B8E420D392F800415B7B /* ViewController.m */; };
 		7767B8E820D392F800415B7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7767B8E620D392F800415B7B /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		773BB7AF20D3D11300DA8D8C /* PeripheralDetailTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeripheralDetailTableViewController.h; sourceTree = "<group>"; };
+		773BB7B020D3D11300DA8D8C /* PeripheralDetailTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeripheralDetailTableViewController.m; sourceTree = "<group>"; };
 		7767B8DD20D392F800415B7B /* BLE-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7767B8E020D392F800415B7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7767B8E120D392F800415B7B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 				7767B8E120D392F800415B7B /* AppDelegate.m */,
 				7767B8E320D392F800415B7B /* ViewController.h */,
 				7767B8E420D392F800415B7B /* ViewController.m */,
+				773BB7AF20D3D11300DA8D8C /* PeripheralDetailTableViewController.h */,
+				773BB7B020D3D11300DA8D8C /* PeripheralDetailTableViewController.m */,
 				7767B8F620D396F500415B7B /* BleCentralManager.h */,
 				7767B8F720D396F500415B7B /* BleCentralManager.m */,
 				7767B8FA20D3B5DE00415B7B /* PeripheralModel.h */,
@@ -155,6 +160,7 @@
 				7767B8E520D392F800415B7B /* ViewController.m in Sources */,
 				7767B8F820D396F500415B7B /* BleCentralManager.m in Sources */,
 				7767B8F020D392FA00415B7B /* main.m in Sources */,
+				773BB7B120D3D11300DA8D8C /* PeripheralDetailTableViewController.m in Sources */,
 				7767B8E220D392F800415B7B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
